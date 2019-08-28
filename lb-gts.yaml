@@ -14,6 +14,11 @@ import-stylebooks:
     namespace: com.citrix.adc.commontypes
     prefix: cmtypes
     version: "2.0"
+    
+  - 
+    namespace: com.citrix.adc.commontypes
+    prefix: cmtypes1
+    version: "1.0"
   - 
     namespace: com.citrix.adc.stylebooks
     prefix: stlb
@@ -26,7 +31,7 @@ parameters:
     name: certificates
     label: "SSL Certificate Settings"
     description: "Certificates for this virtual server if this load Balanced application is exposed using SSL"
-    type: "cmtypes::certificate[]"
+    type: "cmtypes1::certificate[]"
 components: 
   - 
     name: lbvserver-comp
